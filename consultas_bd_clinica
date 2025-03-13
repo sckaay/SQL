@@ -1,0 +1,19 @@
+select * from medicos;
+
+select nome, idade from medicos;
+
+select * from medicos where codm = 3;
+
+select * from medicos where idade > 30 or especialidade = "pediatria" ;
+
+select distinct (especialidade) from medicos;
+
+select count(codm) from medicos;
+
+select especialidade, count(*) as qtd_medicos from medicos
+group by especialidade
+order by qtd_medicos;
+
+select * from medicos where cidade = 'Florianopolis' or cidade = 'Blumenal';
+    
+select * from medicos where cidade in ('Florianopolis', 'Blumenal');
