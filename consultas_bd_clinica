@@ -25,7 +25,7 @@ select * from medicos as m, consultas as c where m.codm = c.codm;
 
 -- realiza a mesma consulta do código acima, mesclando também a tabela PACIENTES, porém, usando o comando 'join' -- 
 select * from medicos as m
-	join consultas as c on m.codm = c.codm
+    join consultas as c on m.codm = c.codm
     join pacientes as p on p.codp = c.codp
     
 -- realiza a união entre as tabelas -- 
