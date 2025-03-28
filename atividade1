@@ -2,7 +2,7 @@
 select nome, cpf from medicos where idade < 40 or especialidade != "traumatologia";
 
 -- 2) buscar todas os dados das consultas marcadas no período da tarde após o dia 19/06/2006 --
-select * from consultas where data > 19/06/2006 and '12:00:00' > hora < '18:00:00';
+select * from consultas where data > 19/06/2006 and hora >= '12:00:00' and hora <= '18:00:00';
 
 -- 3) buscar nome e idade dos pacientes que não residem em Florianópolis --
 select nome, idade from pacientes where cidade != 'Florianópolis';
