@@ -8,7 +8,7 @@ select * from consultas where data > 19/06/2006 and hora >= '12:00:00' and hora 
 select nome, idade from pacientes where cidade != 'Florianópolis';
 
 -- 4) buscar todas as consultas marcadas antes do dia 16/06/2024 e depois do dia 20/12/2024 --
-select * from consultas where data < 16/06/2024 and data < 20/12/2024;
+select * from consultas where data < 16/06/2024 and data > 20/12/2024;
 
 -- 5) buscar nome e idade (em meses) dos pacientes --
 select nome, idade*12 as meses from pacientes;
