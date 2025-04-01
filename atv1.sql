@@ -32,4 +32,3 @@ select * from medicos as m
 select nome, cpf from medicos
 union
 select nome, cpf from funcionarios;
-
