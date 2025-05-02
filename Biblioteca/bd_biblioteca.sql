@@ -51,7 +51,7 @@ CREATE TABLE movimentacao (
   id_mov INT AUTO_INCREMENT PRIMARY KEY,
   dt_mov DATE NOT NULL,
   hora_mov TIME NOT NULL,
-  dt_dev_prev DATE NOT NULL,
+  dt_dev_prev DATE,
   dt_dev_real DATE,
   status VARCHAR(45) NOT NULL,
   multa DECIMAL(10, 2),
