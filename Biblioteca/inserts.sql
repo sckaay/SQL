@@ -6,7 +6,7 @@ INSERT INTO tipo_mov (id_tipo, tipo) VALUES
   (2, 'RESERVA');
 
 -- Tabela Genero --
-INSERT INTO genero (nome) VALUES
+INSERT INTO genero (id_genero, genero) VALUES
 (1, 'Fantasia'),
 (2, 'Romance'),
 (3, 'Mistério'),
